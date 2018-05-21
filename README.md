@@ -6,4 +6,14 @@ Apis such calcuating postage price, generating barcode for their customers, trac
 
 This service is a Django web framework using celery (for async call of post services) and rest framework.
 
+Api calls provided by this service are as follows:
+    
+    getcity
+    CalculatePrice
+    getMassBarcode24
+    PushConstContractParcels
+    PushVariableContractParcels
+    
+    
+
 
