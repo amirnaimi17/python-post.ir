@@ -1,0 +1,183 @@
+
+Prefixes:
+     xsd: http://www.w3.org/2001/XMLSchema
+     ns0: http://tempuri.org/
+     ns1: http://microsoft.com/wsdl/types/
+
+Global elements:
+     ns0:Get_ParcelPrice(barcode: xsd:string, UserName: xsd:string, Password: xsd:string)
+     ns0:Get_ParcelPriceResponse(Get_ParcelPriceResult: {schema: , _value_1: ANY}, ErrorText: xsd:string)
+     ns0:Get_PostNodeData(UserName: xsd:string, Password: xsd:string, Pname: xsd:string)
+     ns0:Get_PostNodeDataResponse(Get_PostNodeDataResult: {schema: , _value_1: ANY})
+     ns0:PushConst2Barcode(ConstContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushConst2BarcodeResponse(PushConst2BarcodeResult: xsd:string)
+     ns0:PushConstContractParcels(ConstContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushConstContractParcelsResponse(PushConstContractParcelsResult: xsd:string)
+     ns0:PushConstContractParcels_V2(ConstContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushConstContractParcels_V2Response(PushConstContractParcels_V2Result: xsd:string)
+     ns0:PushGateWayParcels(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushGateWayParcelsResponse(PushGateWayParcelsResult: xsd:string)
+     ns0:PushKHoshData(ConstContractDT: {schema: , _value_1: ANY}, UserName: xsd:string, Password: xsd:string)
+     ns0:PushKHoshDataResponse(PushKHoshDataResult: xsd:string)
+     ns0:PushMellatNotices(ContractCode: xsd:string, Password: xsd:string, DistributedNotices: xsd:int, ReturnsNotices: xsd:int, UndecidedNotices: xsd:int, RelapseNotices: xsd:int, ReceiptDate: xsd:string, State_code: xsd:int)
+     ns0:PushMellatNoticesResponse(PushMellatNoticesResult: xsd:string)
+     ns0:PushPishkhanData(UserName: xsd:string, Password: xsd:string, RID: xsd:string, PostNodeCode: xsd:int, RDate: xsd:string, type: xsd:int)
+     ns0:PushPishkhanDataResponse(PushPishkhanDataResult: xsd:string)
+     ns0:PushPostalCodeData(PostalCodeData: {schema: , _value_1: ANY}, UserName: xsd:string, Password: xsd:string)
+     ns0:PushPostalCodeDataResponse(PushPostalCodeDataResult: xsd:string)
+     ns0:PushTaxiData(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushTaxiDataResponse(PushTaxiDataResult: xsd:string)
+     ns0:PushVarArray(VarArray: ns0:ArrayOfArrayOfString, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushVarArrayResponse(PushVarArrayResult: xsd:string)
+     ns0:PushVarArray_SMS(VarArray: ns0:ArrayOfArrayOfString, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushVarArray_SMSResponse(PushVarArray_SMSResult: xsd:string)
+     ns0:PushVarArray_SMS_v2(VarArray: ns0:ArrayOfArrayOfString, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushVarArray_SMS_v2Response(PushVarArray_SMS_v2Result: xsd:string)
+     ns0:PushVarContractParcels(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushVarContractParcelsResponse(PushVarContractParcelsResult: xsd:string)
+     ns0:PushVarContractParcels_SMS(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushVarContractParcels_SMSResponse(PushVarContractParcels_SMSResult: xsd:string)
+     ns0:PushVarContractParcels_SMS_V2(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushVarContractParcels_SMS_V2Response(PushVarContractParcels_SMS_V2Result: xsd:string)
+     ns0:PushVarContractParcels_V2(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string)
+     ns0:PushVarContractParcels_V2Response(PushVarContractParcels_V2Result: xsd:string)
+     ns0:Send_Bajeh(Username: xsd:string, Password: xsd:string)
+     ns0:Send_BajehResponse(Send_BajehResult: {schema: , _value_1: ANY}, errortext: xsd:string)
+     ns0:Send_KhoshData(Username: xsd:string, Password: xsd:string, barcode: xsd:string)
+     ns0:Send_KhoshDataNormal(Username: xsd:string, Password: xsd:string, FromDate: xsd:string, ToDate: xsd:string)
+     ns0:Send_KhoshDataNormalResponse(Send_KhoshDataNormalResult: {schema: , _value_1: ANY}, errortext: xsd:string)
+     ns0:Send_KhoshDataResponse(Send_KhoshDataResult: {schema: , _value_1: ANY}, errortext: xsd:string)
+     ns0:Send_MassKhoshData(Username: xsd:string, Password: xsd:string, ReferenceCode: xsd:int, PostNodeCode: xsd:int)
+     ns0:Send_MassKhoshDataResponse(Send_MassKhoshDataResult: {schema: , _value_1: ANY}, errortext: xsd:string)
+     ns0:Send_MassKhoshData_Date(Username: xsd:string, Password: xsd:string, FromDate: xsd:string, ToDate: xsd:string)
+     ns0:Send_MassKhoshData_DateResponse(Send_MassKhoshData_DateResult: {schema: , _value_1: ANY}, errortext: xsd:string)
+     ns0:SetContractAccounts(ContractCode: xsd:string, Password: xsd:string)
+     ns0:SetContractAccountsResponse(SetContractAccountsResult: xsd:string)
+     ns0:SetContractIpAddresses(ContractCode: xsd:string, IP: xsd:string)
+     ns0:SetContractIpAddressesResponse(SetContractIpAddressesResult: xsd:string)
+     ns0:SetContractPostNodes(ContractCode: xsd:string, PostCode: xsd:string)
+     ns0:SetContractPostNodesResponse(SetContractPostNodesResult: xsd:string)
+     ns0:SetContractsInfo(ContractCode: xsd:string, ContractName: xsd:string, OrganizationCode: xsd:int, StartDate: xsd:string, EndDate: xsd:string, ServiceType: xsd:int, ExecuterCode: xsd:int, TotalCost: xsd:string, PostPortion: xsd:string, ContractorPortion: xsd:string, Tax: xsd:string, Weight: xsd:int, PostalCostCategoryID: xsd:int, PostalCostTypeFlag: ns1:char, InsuranceCost: xsd:int)
+     ns0:SetContractsInfoResponse(SetContractsInfoResult: xsd:string)
+     ns0:SetOrganizaitionInfo(OrganizationName: xsd:string, OrganizationCode: xsd:int)
+     ns0:SetOrganizaitionInfoResponse(SetOrganizaitionInfoResult: xsd:string)
+     
+
+Global types:
+     xsd:anyType
+     ns1:char
+     ns0:ArrayOfArrayOfString(ArrayOfString: ns0:ArrayOfString[])
+     ns0:ArrayOfString(string: xsd:string[])
+     xsd:ENTITIES
+     xsd:ENTITY
+     xsd:ID
+     xsd:IDREF
+     xsd:IDREFS
+     xsd:NCName
+     xsd:NMTOKEN
+     xsd:NMTOKENS
+     xsd:NOTATION
+     xsd:Name
+     xsd:QName
+     xsd:anySimpleType
+     xsd:anyURI
+     xsd:base64Binary
+     xsd:boolean
+     xsd:byte
+     xsd:date
+     xsd:dateTime
+     xsd:decimal
+     xsd:double
+     xsd:duration
+     xsd:float
+     xsd:gDay
+     xsd:gMonth
+     xsd:gMonthDay
+     xsd:gYear
+     xsd:gYearMonth
+     xsd:hexBinary
+     xsd:int
+     xsd:integer
+     xsd:language
+     xsd:long
+     xsd:negativeInteger
+     xsd:nonNegativeInteger
+     xsd:nonPositiveInteger
+     xsd:normalizedString
+     xsd:positiveInteger
+     xsd:short
+     xsd:string
+     xsd:time
+     xsd:token
+     xsd:unsignedByte
+     xsd:unsignedInt
+     xsd:unsignedLong
+     xsd:unsignedShort
+
+Bindings:
+     Soap11Binding: {http://tempuri.org/}MassContractsServiceSoap
+     Soap12Binding: {http://tempuri.org/}MassContractsServiceSoap12
+
+Service: MassContractsService
+     Port: MassContractsServiceSoap (Soap11Binding: {http://tempuri.org/}MassContractsServiceSoap)
+         Operations:
+            Get_ParcelPrice(barcode: xsd:string, UserName: xsd:string, Password: xsd:string) -> Get_ParcelPriceResult: {schema: , _value_1: ANY}, ErrorText: xsd:string
+            Get_PostNodeData(UserName: xsd:string, Password: xsd:string, Pname: xsd:string) -> Get_PostNodeDataResult: {schema: , _value_1: ANY}
+            PushConst2Barcode(ConstContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushConst2BarcodeResult: xsd:string
+            PushConstContractParcels(ConstContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushConstContractParcelsResult: xsd:string
+            PushConstContractParcels_V2(ConstContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushConstContractParcels_V2Result: xsd:string
+            PushGateWayParcels(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushGateWayParcelsResult: xsd:string
+            PushKHoshData(ConstContractDT: {schema: , _value_1: ANY}, UserName: xsd:string, Password: xsd:string) -> PushKHoshDataResult: xsd:string
+            PushMellatNotices(ContractCode: xsd:string, Password: xsd:string, DistributedNotices: xsd:int, ReturnsNotices: xsd:int, UndecidedNotices: xsd:int, RelapseNotices: xsd:int, ReceiptDate: xsd:string, State_code: xsd:int) -> PushMellatNoticesResult: xsd:string
+            PushPishkhanData(UserName: xsd:string, Password: xsd:string, RID: xsd:string, PostNodeCode: xsd:int, RDate: xsd:string, type: xsd:int) -> PushPishkhanDataResult: xsd:string
+            PushPostalCodeData(PostalCodeData: {schema: , _value_1: ANY}, UserName: xsd:string, Password: xsd:string) -> PushPostalCodeDataResult: xsd:string
+            PushTaxiData(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushTaxiDataResult: xsd:string
+            PushVarArray(VarArray: ns0:ArrayOfArrayOfString, ContractCode: xsd:string, Password: xsd:string) -> PushVarArrayResult: xsd:string
+            PushVarArray_SMS(VarArray: ns0:ArrayOfArrayOfString, ContractCode: xsd:string, Password: xsd:string) -> PushVarArray_SMSResult: xsd:string
+            PushVarArray_SMS_v2(VarArray: ns0:ArrayOfArrayOfString, ContractCode: xsd:string, Password: xsd:string) -> PushVarArray_SMS_v2Result: xsd:string
+            PushVarContractParcels(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushVarContractParcelsResult: xsd:string
+            PushVarContractParcels_SMS(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushVarContractParcels_SMSResult: xsd:string
+            PushVarContractParcels_SMS_V2(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushVarContractParcels_SMS_V2Result: xsd:string
+            PushVarContractParcels_V2(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushVarContractParcels_V2Result: xsd:string
+            Send_Bajeh(Username: xsd:string, Password: xsd:string) -> Send_BajehResult: {schema: , _value_1: ANY}, errortext: xsd:string
+            Send_KhoshData(Username: xsd:string, Password: xsd:string, barcode: xsd:string) -> Send_KhoshDataResult: {schema: , _value_1: ANY}, errortext: xsd:string
+            Send_KhoshDataNormal(Username: xsd:string, Password: xsd:string, FromDate: xsd:string, ToDate: xsd:string) -> Send_KhoshDataNormalResult: {schema: , _value_1: ANY}, errortext: xsd:string
+            Send_MassKhoshData(Username: xsd:string, Password: xsd:string, ReferenceCode: xsd:int, PostNodeCode: xsd:int) -> Send_MassKhoshDataResult: {schema: , _value_1: ANY}, errortext: xsd:string
+            Send_MassKhoshData_Date(Username: xsd:string, Password: xsd:string, FromDate: xsd:string, ToDate: xsd:string) -> Send_MassKhoshData_DateResult: {schema: , _value_1: ANY}, errortext: xsd:string
+            SetContractAccounts(ContractCode: xsd:string, Password: xsd:string) -> SetContractAccountsResult: xsd:string
+            SetContractIpAddresses(ContractCode: xsd:string, IP: xsd:string) -> SetContractIpAddressesResult: xsd:string
+            SetContractPostNodes(ContractCode: xsd:string, PostCode: xsd:string) -> SetContractPostNodesResult: xsd:string
+            SetContractsInfo(ContractCode: xsd:string, ContractName: xsd:string, OrganizationCode: xsd:int, StartDate: xsd:string, EndDate: xsd:string, ServiceType: xsd:int, ExecuterCode: xsd:int, TotalCost: xsd:string, PostPortion: xsd:string, ContractorPortion: xsd:string, Tax: xsd:string, Weight: xsd:int, PostalCostCategoryID: xsd:int, PostalCostTypeFlag: ns1:char, InsuranceCost: xsd:int) -> SetContractsInfoResult: xsd:string
+            SetOrganizaitionInfo(OrganizationName: xsd:string, OrganizationCode: xsd:int) -> SetOrganizaitionInfoResult: xsd:string
+
+     Port: MassContractsServiceSoap12 (Soap12Binding: {http://tempuri.org/}MassContractsServiceSoap12)
+         Operations:
+            Get_ParcelPrice(barcode: xsd:string, UserName: xsd:string, Password: xsd:string) -> Get_ParcelPriceResult: {schema: , _value_1: ANY}, ErrorText: xsd:string
+            Get_PostNodeData(UserName: xsd:string, Password: xsd:string, Pname: xsd:string) -> Get_PostNodeDataResult: {schema: , _value_1: ANY}
+            PushConst2Barcode(ConstContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushConst2BarcodeResult: xsd:string
+            PushConstContractParcels(ConstContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushConstContractParcelsResult: xsd:string
+            PushConstContractParcels_V2(ConstContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushConstContractParcels_V2Result: xsd:string
+            PushGateWayParcels(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushGateWayParcelsResult: xsd:string
+            PushKHoshData(ConstContractDT: {schema: , _value_1: ANY}, UserName: xsd:string, Password: xsd:string) -> PushKHoshDataResult: xsd:string
+            PushMellatNotices(ContractCode: xsd:string, Password: xsd:string, DistributedNotices: xsd:int, ReturnsNotices: xsd:int, UndecidedNotices: xsd:int, RelapseNotices: xsd:int, ReceiptDate: xsd:string, State_code: xsd:int) -> PushMellatNoticesResult: xsd:string
+            PushPishkhanData(UserName: xsd:string, Password: xsd:string, RID: xsd:string, PostNodeCode: xsd:int, RDate: xsd:string, type: xsd:int) -> PushPishkhanDataResult: xsd:string
+            PushPostalCodeData(PostalCodeData: {schema: , _value_1: ANY}, UserName: xsd:string, Password: xsd:string) -> PushPostalCodeDataResult: xsd:string
+            PushTaxiData(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushTaxiDataResult: xsd:string
+            PushVarArray(VarArray: ns0:ArrayOfArrayOfString, ContractCode: xsd:string, Password: xsd:string) -> PushVarArrayResult: xsd:string
+            PushVarArray_SMS(VarArray: ns0:ArrayOfArrayOfString, ContractCode: xsd:string, Password: xsd:string) -> PushVarArray_SMSResult: xsd:string
+            PushVarArray_SMS_v2(VarArray: ns0:ArrayOfArrayOfString, ContractCode: xsd:string, Password: xsd:string) -> PushVarArray_SMS_v2Result: xsd:string
+            PushVarContractParcels(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushVarContractParcelsResult: xsd:string
+            PushVarContractParcels_SMS(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushVarContractParcels_SMSResult: xsd:string
+            PushVarContractParcels_SMS_V2(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushVarContractParcels_SMS_V2Result: xsd:string
+            PushVarContractParcels_V2(VarContractDT: {schema: , _value_1: ANY}, ContractCode: xsd:string, Password: xsd:string) -> PushVarContractParcels_V2Result: xsd:string
+            Send_Bajeh(Username: xsd:string, Password: xsd:string) -> Send_BajehResult: {schema: , _value_1: ANY}, errortext: xsd:string
+            Send_KhoshData(Username: xsd:string, Password: xsd:string, barcode: xsd:string) -> Send_KhoshDataResult: {schema: , _value_1: ANY}, errortext: xsd:string
+            Send_KhoshDataNormal(Username: xsd:string, Password: xsd:string, FromDate: xsd:string, ToDate: xsd:string) -> Send_KhoshDataNormalResult: {schema: , _value_1: ANY}, errortext: xsd:string
+            Send_MassKhoshData(Username: xsd:string, Password: xsd:string, ReferenceCode: xsd:int, PostNodeCode: xsd:int) -> Send_MassKhoshDataResult: {schema: , _value_1: ANY}, errortext: xsd:string
+            Send_MassKhoshData_Date(Username: xsd:string, Password: xsd:string, FromDate: xsd:string, ToDate: xsd:string) -> Send_MassKhoshData_DateResult: {schema: , _value_1: ANY}, errortext: xsd:string
+            SetContractAccounts(ContractCode: xsd:string, Password: xsd:string) -> SetContractAccountsResult: xsd:string
+            SetContractIpAddresses(ContractCode: xsd:string, IP: xsd:string) -> SetContractIpAddressesResult: xsd:string
+            SetContractPostNodes(ContractCode: xsd:string, PostCode: xsd:string) -> SetContractPostNodesResult: xsd:string
+            SetContractsInfo(ContractCode: xsd:string, ContractName: xsd:string, OrganizationCode: xsd:int, StartDate: xsd:string, EndDate: xsd:string, ServiceType: xsd:int, ExecuterCode: xsd:int, TotalCost: xsd:string, PostPortion: xsd:string, ContractorPortion: xsd:string, Tax: xsd:string, Weight: xsd:int, PostalCostCategoryID: xsd:int, PostalCostTypeFlag: ns1:char, InsuranceCost: xsd:int) -> SetContractsInfoResult: xsd:string
+            SetOrganizaitionInfo(OrganizationName: xsd:string, OrganizationCode: xsd:int) -> SetOrganizaitionInfoResult: xsd:string
+

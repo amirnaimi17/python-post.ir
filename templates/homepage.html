@@ -1,0 +1,16 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        {% get_current_language as LANGUAGE_CODE %}
+    {% get_current_language_bidi as LANGUAGE_BIDI %}
+</head>
+<body>
+                    {% if expos %}
+                        <h>{{  expos.0.lable }}</h>
+                    {% endif %}
+</body>
+</html>

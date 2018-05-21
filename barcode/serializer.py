@@ -1,0 +1,102 @@
+from rest_framework import serializers
+
+
+class CalculatePriceSerializer(serializers.Serializer):
+    Weight = serializers.IntegerField(required=True)
+    ParcelType = serializers.IntegerField(required=True)
+    ParcelServiceType = serializers.IntegerField(required=True, max_value=4, min_value=1)
+
+    ParcelDestType = serializers.IntegerField(default=1, max_value=5, min_value=1)
+    InsuranceType = serializers.IntegerField(default=1)
+    ExtraTime = serializers.IntegerField(default=0, max_value=2, min_value=0)
+    SendingMethod = serializers.IntegerField(default=1, max_value=2, min_value=1)
+    SpsReceiveTimeType = serializers.IntegerField(default=1)
+    spsDestinationType = serializers.IntegerField(default=0)
+
+    DestinationCode = serializers.IntegerField(default=0)
+    SPSDestinationType = serializers.IntegerField(default=0)
+    SPSParcelType = serializers.IntegerField(default=0)
+    SPSReceiveType = serializers.IntegerField(default=0)
+    PostalCodes = serializers.IntegerField(default=0)
+    TwoReceiptant = serializers.BooleanField(default=False)
+    ElectronicTwoReceiptant = serializers.BooleanField(default=False)
+    SMSService = serializers.BooleanField(default=False)
+    IsCOT = serializers.BooleanField(default=False)
+    NonStandardPackage = serializers.BooleanField(default=False)
+    IsExpress = serializers.BooleanField(default=False)
+    IsBulkConsign = serializers.BooleanField(default=False)
+
+    ContractType = serializers.IntegerField(default=0)
+    ElectronicDue = serializers.IntegerField(default=0)
+    InsurSayAmount = serializers.IntegerField(default=0)
+    MBagCountryCode = serializers.IntegerField(default=0)
+    OutCOT = serializers.IntegerField(default=0)
+    OutCustomerCommAmount = serializers.IntegerField(default=0)
+    OutCustomsAmount = serializers.IntegerField(default=0)
+    OutElectronicDueAmount = serializers.IntegerField(default=0)
+    OutExpressAmount = serializers.IntegerField(default=0)
+    OutExtraTimeAmount = serializers.IntegerField(default=0)
+    OutInsuranceAmount = serializers.IntegerField(default=0)
+    OutM_Bag_RegsiterAmount = serializers.IntegerField(default=0)
+    OutNonStandard = serializers.IntegerField(default=0)
+    OutPostalCommAmount = serializers.IntegerField(default=0)
+    OutPostalRent = serializers.IntegerField(default=0)
+    OutSendPlace = serializers.IntegerField(default=0)
+    OutTaxAmount = serializers.IntegerField(default=0)
+    OutTotalAmount = serializers.IntegerField(default=0)
+    OuttwoReceiptantAmount = serializers.IntegerField(default=0)
+    ParcelDestinationType = serializers.IntegerField(default=0)
+    PostalCode = serializers.IntegerField(default=0)
+    SourceCode = serializers.IntegerField(default=0)
+
+
+class ConstantContractSerializer(serializers.Serializer):
+    contract_code = serializers.IntegerField(required=True)
+    barcode = serializers.CharField(max_length=20, required=True)
+    post_node_code = serializers.IntegerField(required=True)
+    destination_code = serializers.IntegerField(required=True)
+    parcel_type = serializers.IntegerField(required=True)
+    sender_name = serializers.CharField(max_length=200)
+    receiver_name = serializers.CharField(max_length=200)
+    parcel_accept_date = serializers.CharField(max_length=100, required=True)
+    parcel_accept_time = serializers.CharField(max_length=100, required=True)
+    receiver_postal_code = serializers.CharField(max_length=12)
+    sender_postal_code = serializers.CharField(max_length=12)
+    additional_info = serializers.CharField(max_length=200, required=False)
+    sender_national_code = serializers.CharField(max_length=10, required=False)
+    receiver_national_code = serializers.CharField(max_length=10, required=False)
+
+
+class VariableContractSerializer(serializers.Serializer):
+    contract_code = serializers.IntegerField(required=True)
+    barcode = serializers.CharField(max_length=20, required=True)
+    service_type = serializers.IntegerField(required=False)
+    parcel_type = serializers.IntegerField(required=True)
+    post_node_code = serializers.IntegerField(required=True)
+    destination_code = serializers.IntegerField(required=True)
+    sender_name = serializers.CharField(max_length=200)
+    receiver_name = serializers.CharField(max_length=200)
+    parcel_accept_date = serializers.CharField(max_length=100, required=True)
+    parcel_accept_time = serializers.CharField(max_length=100, required=False)
+    receiver_postal_code = serializers.CharField(max_length=12)
+    sender_postal_code = serializers.CharField(max_length=12)
+    post_cost = serializers.CharField(max_length=15)
+    company_cost = serializers.CharField(max_length=15)
+    total_cost = serializers.CharField(max_length=15)
+    tax_cost = serializers.CharField(max_length=15)
+    weight = serializers.IntegerField(required=True)
+    repository_type = serializers.IntegerField(required=False)
+    sub_repository_type = serializers.CharField(max_length=1, required=False)
+    insurance_cost = serializers.IntegerField(required=False)
+    additional_info = serializers.CharField(max_length=200, required=False)
+    sender_national_code = serializers.CharField(max_length=10, required=False)
+    receiver_national_code = serializers.CharField(max_length=10, required=False)
+
+
+class BarcodeSerializer(serializers.Serializer):
+    TypeCode = serializers.IntegerField(required=True)
+    CityCode = serializers.CharField(required=True)
+
+
+class GetCitySerializer(serializers.Serializer):
+    type = serializers.IntegerField(required=True)
